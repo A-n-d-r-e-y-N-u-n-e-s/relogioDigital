@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'century gothic', sans-serif;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2f363e;
+}
+
+#relogio {
+    display: flex;
+    gap: 40px; 
+}
+
+.item-circulo {
+    position: relative;
+    width: 150px;
+    
+    height: 150px;
+    background: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

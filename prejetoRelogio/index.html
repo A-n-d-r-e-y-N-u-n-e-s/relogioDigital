@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio Digital</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <ul id="relogio">
+        <li class="iten-circulo" style="color: #d9ff02;">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+            </svg>
+            <div id="horas">
+                00
+            </div>
+        </li>
+
+        <li class="iten-circulo" style="color: #bb00ff ;">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+            </svg>
+            <div id="minutos">
+                00
+            </div>
+        </li>
+
+        <li class="iten-circulo" style="color: #ff9100 ;">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+            </svg>
+            <div id="segundos">
+                00
+            </div>
+        </li>
+
+          <li class="ap"> 
+            <div id="ampm">
+                AM
+            </div>
+          </li>
+    </ul>
 
 
-    
+
     <script src="scripit.js"></script>
 </body>
+
 </html>
