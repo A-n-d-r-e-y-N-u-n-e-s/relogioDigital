@@ -1,6 +1,6 @@
 let horas = document.getElementById('horas')
 let minutos = document.getElementById('minutos')
-let sugundos = document.getElementById('segundos')
+let segundos = document.getElementById('segundos')
 let ampm = document.getElementById('ampm')
 
 
@@ -8,9 +8,9 @@ let hh = document.getElementById('hh')
 let mm = document.getElementById('mm')
 let ss = document.getElementById('ss')
 
-let hr_ponto = document.querySelector('hr_ponto')
-let min_ponto = document.querySelector('min_ponto')
-let seg_ponto = document.querySelector('seg_ponto')
+let hr_ponto = document.querySelector('.hr_ponto')
+let min_ponto = document.querySelector('.min_ponto')
+let seg_ponto = document.querySelector('.seg_ponto')
 
 setInterval(() => {
     let h = new Date().getHours();
@@ -19,9 +19,9 @@ setInterval(() => {
     let amdDmd = h >= 12 ? 'PM' : 'AM';
 
 
-    if (h > 12) (
-        h - h - 12
-    )
+    // if (h > 24) (
+    //     h = h - 24
+    // )
 
     h = (h < 10) ? '0' + h : h;
     m = (m < 10) ? '0' + m : m;
@@ -38,16 +38,14 @@ setInterval(() => {
     segundos.innerHTML = s + '<br><span>segundos</span>';
     ampm.innerHTML = amdDmd;
 
-    hh.style.strokeDashoffset = 440 - (440 * h) / 12;
+    hh.style.strokeDashoffset = 440 - (440 * h) / 24;
     mm.style.strokeDashoffset = 440 - (440 * m) / 60;
     ss.style.strokeDashoffset = 440 - (440 * s) / 60;
 
+    hr_ponto.style.transform = `rotate(${h * 15 }deg)`
+    min_ponto.style.transform = `rotate(${m * 6 }deg)`
+    seg_ponto.style.transform = `rotate(${s * 6 }deg)`
+
+
+
 })
-
-
-
-
-
-
-
-
