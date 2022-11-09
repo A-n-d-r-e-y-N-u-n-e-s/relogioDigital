@@ -42,12 +42,6 @@ setInterval(() => {
     mm.style.strokeDashoffset = 440 - (440 * m) / 60;
     ss.style.strokeDashoffset = 440 - (440 * s) / 60;
 
-    hr_ponto.style.transform = `rotate(${h * 30 }deg)`
-    min_ponto.style.transform = `rotate(${m * 6 }deg)`
-    seg_ponto.style.transform = `rotate(${s * 6 }deg)`
-
-
-
 })
 
 
